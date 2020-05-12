@@ -1,13 +1,3 @@
-```lisp
-(ql:quickload '(:iterate :alexandria :reader))
-(defpackage :skiena
-  (:use :cl :iterate :alexandria))
-(reader:enable-reader-syntax 'get-val 'lambda)
-(in-package :skiena)
-
-;;; Most algorithms / lisp-functions depend on other additional functions for working correctly.
-```
-
 # Introduction
 
 - Problem vs Problem Instance

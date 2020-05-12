@@ -5,3 +5,16 @@ must be aware of iterate - possibly use such "high level" iteration techologies 
 writing (pseudo)code.
 
 Besides, making things lispy, another reason this repository is in existence is for notes for myself - and possibly others.
+
+## Prerequisites
+
+```lisp
+(ql:quickload '(:iterate :alexandria :reader))
+(defpackage :skiena
+  (:use :cl :iterate :alexandria))
+(reader:enable-reader-syntax 'get-val 'lambda)
+(in-package :skiena)
+
+;;; Most algorithms / lisp-functions depend on other additional functions for working correctly.
+;;; and mostly exist for illustrative purposes only.
+```
