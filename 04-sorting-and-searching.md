@@ -3,7 +3,8 @@
 Search preprocessing, finding closest pairs in, element uniqueness, frequency distributions,
 selecting kth largest items, convex hulls.
 
-TODO: convex hulls
+TODO: convex hulls: how exactly is it "easy to find and delete"? The closest amongst
+[several](https://en.wikipedia.org/wiki/Convex_hull_algorithms#Algorithms) is perhaps the [Monotone](https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain#Python) algorithm. The concept of left vs right turns is similar though.
 
 Two sets can be efficiently determined to be disjoint by sorting the smaller set. (See why
 this is more efficient than sorting both sets - or sorting the larger set.)

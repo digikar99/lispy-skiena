@@ -9,12 +9,14 @@ Besides, making things lispy, another reason this repository is in existence is 
 ## Prerequisites
 
 ```lisp
-(ql:quickload '(:iterate :alexandria :reader))
+(ql:quickload '(:iterate :alexandria :reader :arrows))
 (defpackage :skiena
-  (:use :cl :iterate :alexandria))
+  (:use :cl :iterate :alexandria :arrows))
 (reader:enable-reader-syntax 'get-val 'lambda)
 (in-package :skiena)
-
-;;; Most algorithms / lisp-functions depend on other additional functions for working correctly.
-;;; and mostly exist for illustrative purposes only.
 ```
+
+Most algorithms / lisp-functions depend on other additional functions for working correctly.
+and mostly exist for illustrative purposes only.
+
+No care has been taken to ensure style consistency yet.
