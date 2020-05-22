@@ -6,6 +6,9 @@ writing (pseudo)code.
 
 Besides, making things lispy, another reason this repository is in existence is for notes for myself - and possibly others.
 
+See the book for chapter 10 - which happens to be an approximate algorithm to design an
+algorithm.
+
 ## Prerequisites
 
 ```lisp
