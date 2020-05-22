@@ -207,6 +207,7 @@ For DFS-based algorithms, note exactly when to process the edges and vertices.
           ;; compilation fails on asserted type of p - WHY??? - TODO
           (iter (for p initially [(graph-edges g) v]
                      then (edgenode-next p))
+                (while p)
                 (with y = (edgenode-y p))
                 (cond ((not [*discovered* y])
                        (when *process-edge*
